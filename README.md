@@ -1,9 +1,24 @@
 # SIMPLE AND FAST AB TEST REACT COMPONENT
 Simple and fast Ab Test React component
 
+## INIT
 ```javascript
-import { Variant, Experiment, OnExperiment } from 'fast-ab-test'
+import {
+  Variant,
+  Experiment as ExperimentComponent,
+  OnExperiment as OnExperimentComponent
+} from 'fast-ab-test'
+import { pathOr } from 'ramda'
+import { connect } from 'react-redux'
 
+const mapStateToProps = state => ({ abTest: pathOr({}, ['abTest'], state) })
+
+Experiment = connect(mapStateToProps)(ExperimentComponent)
+OnExperiment = connect(mapStateToProps)(OnExperimentComponent)
+```
+
+## USE
+```javascript
 <OnExperiment name='buy' var='A'>
   OnExperiment
 </OnExperiment>

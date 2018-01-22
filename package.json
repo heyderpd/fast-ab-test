@@ -1,6 +1,6 @@
 {
   "name": "fast-ab-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/heyderpd/fast-ab-test.git"
   },
-  "keywords": [],
+  "keywords": ["simple", "react", "redux", "ab", "test", "component"],
   "author": "<heyderpd@gmail.com> (http://heyderpd.github.io)",
   "license": "MIT",
   "bugs": {

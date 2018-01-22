@@ -5,7 +5,7 @@ import VariantComponent from './variant-component'
 class OnExperimentComponent extends Component {
   render () {
     return (
-      <ExperimentComponent name={this.props.name}>
+      <ExperimentComponent {...this.props}>
         <VariantComponent name={this.props.var}>
           { this.props.children }
         </VariantComponent>
